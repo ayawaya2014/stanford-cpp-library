@@ -101,7 +101,7 @@ GDimension& operator *=(GDimension& d, double scale) {
 }
 
 int hashCode(const GDimension& dim) {
-    return hashCode2(dim.width, dim.height);
+    return hashCode(dim.width, dim.height);
 }
 
 /*
@@ -177,7 +177,7 @@ GPoint& operator *=(GPoint& p, double scale) {
 
 
 int hashCode(const GPoint& pt) {
-    return hashCode2(pt.x, pt.y);
+    return hashCode(pt.x, pt.y);
 }
 
 /*
@@ -294,5 +294,5 @@ bool operator >=(const GRectangle& r1, const GRectangle& r2) {
 }
 
 int hashCode(const GRectangle& r) {
-    return hashCode4(r.x, r.y, r.width, r.height);
+    return hashCode(r.x, r.y, r.width, r.height);
 }
