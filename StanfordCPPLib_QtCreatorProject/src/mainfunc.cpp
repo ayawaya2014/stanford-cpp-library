@@ -601,5 +601,9 @@ int main() {
 
     cout << "set: " << set << endl;
 
+    for (auto itr = set.begin(); itr != set.end(); ++itr) {
+        cout << itr->size() << endl;
+    }
+
     return 0;
 }
